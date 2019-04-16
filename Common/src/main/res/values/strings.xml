@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Common</string>
+    <string name="behavior_footer">com.renard.common.customview.behavior.FooterBehavior</string>
+    <string name="behavior_scale_fab">com.renard.common.customview.behavior.FabScaleBehavior</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.renard.common.customview.draglayout.DragLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:skin="http://schemas.android.com/android/skin"
+        android:id="@+id/dl_activity_main_drag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/activity_main_left"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.renard.common.customview.WrappedViewPager
+                android:id="@+id/wvp_activity_main_display"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/custom_color_app_bg"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                skin:enable="true"/>
+
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+        />
+        <com.renard.navigationview.NavigationView
+                android:id="@+id/navigation"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="100dp"
+                android:background="@android:color/white"
+                app:activeTextColor="@android:color/black"
+                app:lineColor ="#000000"
+                app:unactiveTextColor="#666666"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.renard.common.customview.draglayout.DragLayout>
